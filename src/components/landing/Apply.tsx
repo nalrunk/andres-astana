@@ -49,7 +49,7 @@ export function Apply() {
     <section id="apply" className="bg-ink text-ink-foreground">
       <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-16 px-5 py-24 md:px-10 md:py-36 lg:grid-cols-12">
         <Reveal className="lg:col-span-6">
-          <p className="eyebrow mb-8 text-ink-muted">07 — Заявка</p>
+          <p className="eyebrow mb-8 text-ink-muted">11 — Анкета модели</p>
           <h2 className="display text-[clamp(2.25rem,9vw,4.25rem)]">
             Твое
             <br />

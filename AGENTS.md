@@ -32,4 +32,5 @@ use the editor.
 ## Project rules
 - Landing sections live in `src/components/landing/`, with all copy/sample data in `data.ts` — one place to edit content.
 - Animation on/off is a context in `src/lib/motion-preference.tsx` plus `html[data-motion="off"]` CSS that freezes CSS transitions; new animated components must respect `useMotionOn()`.
-- Application form validation is the zod schema in `src/lib/application.ts` (covered by its test); the form has no backend yet.
+- Form validation lives in zod schemas in `src/lib/` (`application.ts`, `enrollment.ts`), each covered by a test; forms have no backend yet.
+- Course schedule and enrollment form share selected-course state through `School.tsx`, so «Записаться» can preselect the course.

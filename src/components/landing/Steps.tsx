@@ -13,7 +13,7 @@ export function Steps() {
         <div className="lg:col-span-5">
           <div className="lg:sticky lg:top-32">
             <Reveal>
-              <p className="eyebrow mb-6 text-muted-foreground">04 — Как это работает</p>
+              <p className="eyebrow mb-6 text-muted-foreground">06 — Как это работает</p>
               <h2 className="display text-4xl md:text-6xl">
                 От анкеты
                 <br />

@@ -28,7 +28,7 @@ export function Header() {
           ANDRES
         </a>
 
-        <nav className="hidden items-center gap-10 md:flex" aria-label="Основное меню">
+        <nav className="hidden items-center gap-7 xl:gap-10 lg:flex" aria-label="Основное меню">
           {NAV.map((item) => (
             <a
               key={item.href}
@@ -46,7 +46,7 @@ export function Header() {
           </Button>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center lg:hidden"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Закрыть меню" : "Открыть меню"}
             aria-expanded={open}
@@ -63,7 +63,7 @@ export function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-border bg-background md:hidden"
+            className="overflow-hidden border-t border-border bg-background lg:hidden"
             aria-label="Мобильное меню"
           >
             <div className="flex flex-col px-5 py-6">

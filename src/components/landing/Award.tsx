@@ -58,7 +58,7 @@ export function Award() {
     <section id="award" className="mx-auto max-w-[1440px] px-5 py-24 md:px-10 md:py-32">
       <div className="grid grid-cols-1 gap-14 lg:grid-cols-12">
         <Reveal className="lg:col-span-5">
-          <p className="eyebrow mb-6 text-muted-foreground">06 — Премия</p>
+          <p className="eyebrow mb-6 text-muted-foreground">08 — Премия</p>
           <h2 className="display text-4xl md:text-6xl">
             New Face
             <br />

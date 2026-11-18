@@ -8,7 +8,7 @@ export function Projects() {
       <div className="mx-auto max-w-[1440px] px-5 py-24 md:px-10 md:py-32">
         <Reveal className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow mb-6 text-muted-foreground">05 — Афиша</p>
+            <p className="eyebrow mb-6 text-muted-foreground">07 — Афиша</p>
             <h2 className="display text-4xl md:text-6xl">Ближайшие съемки</h2>
           </div>
           <p className="max-w-sm text-muted-foreground">

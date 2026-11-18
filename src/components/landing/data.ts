@@ -14,6 +14,8 @@ export const TELEGRAM_BOT_URL = "https://t.me/andres_models_bot";
 
 export const NAV = [
   { href: "#models", label: "Модели" },
+  { href: "#top10", label: "Топ-10" },
+  { href: "#courses", label: "Курсы" },
   { href: "#projects", label: "Проекты" },
   { href: "#award", label: "Премия" },
   { href: "#about", label: "О нас" },

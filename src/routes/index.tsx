@@ -5,6 +5,9 @@ import { Hero } from "@/components/landing/Hero";
 import { Benefits } from "@/components/landing/Benefits";
 import { Manifesto } from "@/components/landing/Manifesto";
 import { Catalog } from "@/components/landing/Catalog";
+import { ModelOfMonth } from "@/components/landing/ModelOfMonth";
+import { TopPhotos } from "@/components/landing/TopPhotos";
+import { School } from "@/components/landing/School";
 import { Steps } from "@/components/landing/Steps";
 import { Projects } from "@/components/landing/Projects";
 import { Award } from "@/components/landing/Award";
@@ -41,9 +44,12 @@ function Index() {
         <Benefits />
         <Manifesto />
         <Catalog />
+        <ModelOfMonth />
+        <TopPhotos />
         <Steps />
         <Projects />
         <Award />
+        <School />
         <Apply />
       </main>
       <Footer />
