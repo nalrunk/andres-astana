@@ -53,7 +53,7 @@ export function Hero() {
             className="mt-10 max-w-xl"
           >
             <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
-              Ищем модели по всей стране — без опыта, портфолио и платных курсов. Подайте анкету онлайн, а
+              Ищем модели в Алматы, Астане и Шымкенте — без опыта, портфолио и платных курсов. Подайте анкету онлайн, а
               остальное агентство возьмет на себя.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { applicationSchema } from "./application";
 
-const valid = { name: "Анна", city: "Казань", height: "176", contact: "@anna_model" };
+const valid = { name: "Аружан", city: "Алматы", height: "176", contact: "@anna_model" };
 
 describe("quick application form", () => {
   it("accepts a complete application with a Telegram username", () => {

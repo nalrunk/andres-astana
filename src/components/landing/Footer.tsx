@@ -18,7 +18,7 @@ export function Footer() {
           <div className="md:col-span-5">
             <p className="font-display text-3xl font-semibold tracking-[0.2em]">ANDRES</p>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              Виртуальное модельное агентство. Ищем новые лица по всей стране.
+              Виртуальное модельное агентство. Ищем новые лица в Алматы, Астане и Шымкенте.
             </p>
           </div>
 

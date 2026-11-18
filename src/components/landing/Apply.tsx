@@ -9,8 +9,8 @@ import { Reveal } from "./Reveal";
 type Field = "name" | "city" | "height" | "contact";
 
 const FIELDS: { id: Field; label: string; placeholder: string; type?: string; inputMode?: "numeric" }[] = [
-  { id: "name", label: "Имя", placeholder: "Анна" },
-  { id: "city", label: "Город", placeholder: "Казань" },
+  { id: "name", label: "Имя", placeholder: "Аружан" },
+  { id: "city", label: "Город", placeholder: "Алматы" },
   { id: "height", label: "Рост, см", placeholder: "175", inputMode: "numeric" },
   { id: "contact", label: "Соцсети или Telegram", placeholder: "@username или ссылка" },
 ];
