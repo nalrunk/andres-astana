@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
+import { Fragment, createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { MotionConfig } from "framer-motion";
 
 export type MotionLevel = "full" | "off";
@@ -29,7 +29,13 @@ export function MotionPreferenceProvider({ children }: { children: ReactNode }) 
 
   return (
     <MotionPreferenceContext.Provider value={{ level, setLevel }}>
-      <MotionConfig reducedMotion={level === "off" ? "always" : "user"}>{children}</MotionConfig>
+      <MotionConfig
+        reducedMotion={level === "off" ? "always" : "user"}
+        {...(level === "off" ? { transition: { duration: 0 } } : {})}
+      >
+        {/* Remount on change so "off" renders every animated block in its final, static state. */}
+        <Fragment key={level}>{children}</Fragment>
+      </MotionConfig>
     </MotionPreferenceContext.Provider>
   );
 }

@@ -94,7 +94,7 @@ export function Award() {
               const isVoted = votedFor === n.name;
               return (
                 <Reveal key={n.name} delay={i * 0.06}>
-                  <div role="listitem" className="flex items-center gap-4 border-t border-border py-5 md:gap-6">
+                  <div role="listitem" className="grid grid-cols-[auto_auto_minmax(0,1fr)] items-center gap-x-4 gap-y-4 border-t border-border py-5 sm:grid-cols-[auto_auto_minmax(0,1fr)_auto] md:gap-x-6">
                     <span className="font-display w-6 text-sm text-muted-foreground">0{i + 1}</span>
                     <img
                       src={n.photo}
@@ -107,7 +107,7 @@ export function Award() {
                     <div className="min-w-0 flex-1">
                       <div className="flex items-baseline justify-between gap-3">
                         <div className="min-w-0">
-                          <p className="truncate text-sm font-semibold uppercase tracking-wide md:text-base">{n.name}</p>
+                          <p className="text-sm font-semibold uppercase tracking-wide md:text-base">{n.name}</p>
                           <p className="text-xs text-muted-foreground">{n.city}</p>
                         </div>
                         <p className="font-display shrink-0 text-sm tabular-nums">{share}%</p>
@@ -129,7 +129,7 @@ export function Award() {
                     <Button
                       variant={isVoted ? "editorial" : "editorialOutline"}
                       size="sm"
-                      className="h-9 shrink-0 px-3 md:px-5"
+                      className="col-span-3 h-10 w-full px-5 sm:col-span-1 sm:h-9 sm:w-auto"
                       disabled={!!votedFor && !isVoted}
                       onClick={() => vote(n.name, i)}
                       aria-pressed={isVoted}

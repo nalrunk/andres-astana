@@ -28,7 +28,7 @@ export function Manifesto() {
         <div className="mt-24 grid grid-cols-2 border-t border-ink-border lg:grid-cols-4">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.1} className="border-b border-ink-border py-8 pr-4 lg:border-b-0">
-              <p className="display text-4xl md:text-6xl">{s.value}</p>
+              <p className="display whitespace-nowrap text-[clamp(1.75rem,6.5vw,3.75rem)]">{s.value}</p>
               <p className="eyebrow mt-4 text-ink-muted">{s.label}</p>
             </Reveal>
           ))}

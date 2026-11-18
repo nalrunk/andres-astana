@@ -40,7 +40,7 @@ export const BENEFITS = [
 ];
 
 export const STATS = [
-  { value: "12 400+", label: "анкет в базе" },
+  { value: "12\u00a0400+", label: "анкет в базе" },
   { value: "86", label: "городов" },
   { value: "340", label: "съемок в год" },
   { value: "120+", label: "брендов-партнеров" },
