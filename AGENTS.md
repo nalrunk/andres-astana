@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Landing sections live in `src/components/landing/`, with all copy/sample data in `data.ts` — one place to edit content.
+- Animation on/off is a context in `src/lib/motion-preference.tsx` plus `html[data-motion="off"]` CSS that freezes CSS transitions; new animated components must respect `useMotionOn()`.
+- Application form validation is the zod schema in `src/lib/application.ts` (covered by its test); the form has no backend yet.
